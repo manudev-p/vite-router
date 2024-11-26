@@ -1,7 +1,9 @@
+import React from 'react'
 import ProtectedRoot from './auth/ProtectedRoot'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 
+// Define the structure of a page module
 type PageModule = {
   default: React.ComponentType
   loader?: () => Promise<any>
@@ -9,6 +11,7 @@ type PageModule = {
   ErrorBoundary?: React.ComponentType
 }
 
+// Define the structure of a route
 type Route = {
   path: string
   Element: React.ComponentType
@@ -17,32 +20,33 @@ type Route = {
   ErrorBoundary?: React.ComponentType
 }
 
+// Import all page modules eagerly
+const pages: Record<string, PageModule> = import.meta.glob('./pages/**/*.tsx', {
+  eager: true
+})
+
+// Define restricted routes
 const restricted: string[] = [
   '/dashboard',
   '/dashboard/analytics',
   '/dashboard/:id'
 ]
 
-const App: React.FC = () => {
+// Function to create a route list from the imported page modules
+const createRouteList = (pages: Record<string, PageModule>): Route[] => {
   const routes: Route[] = []
 
-  const pages: Record<string, PageModule> = import.meta.glob(
-    './pages/**/*.tsx',
-    { eager: true }
-  )
-
   for (const path of Object.keys(pages)) {
-    // get only files inside /pages
+    // Extract file name from path
     const fileName = path.match(/\.\/pages\/(.*)\.tsx$/)?.[1]
     if (!fileName) continue
 
-    // change any $ to : to comply with reactRouter parameters
+    // Normalize the path, replacing "$" with ":" and removing "/index"
     const normalizedPathName = fileName.includes('$')
       ? fileName.replace('$', ':')
       : fileName.replace(/\/index/, '')
 
     routes.push({
-      // if index on pages root make it home
       path: fileName === 'index' ? '/' : `/${normalizedPathName.toLowerCase()}`,
       Element: pages[path].default,
       loader: pages[path]?.loader,
@@ -51,6 +55,14 @@ const App: React.FC = () => {
     })
   }
 
+  return routes
+}
+
+// Main App component
+const App: React.FC = () => {
+  const routes = createRouteList(pages)
+
+  // Create a router with route mapping
   const router = createBrowserRouter(
     routes.map(({ Element, ErrorBoundary, ...rest }) => ({
       ...rest,
