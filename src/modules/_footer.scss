@@ -1,0 +1,42 @@
+@use '../styles/vars.scss' as *;
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  min-height: 70px;
+  .footer-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: $text;
+    outline: 2px dashed transparent;
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+    font-size: $tsm1;
+    &:focus {
+      outline-color: $focus;
+    }
+    .footer-info {
+      font-family: $fira-code;
+      text-align: center;
+    }
+    .footer-git {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 1rem;
+      &-item {
+        display: flex;
+        gap: 0.3rem;
+        &-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

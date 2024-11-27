@@ -1,0 +1,54 @@
+@use '../styles/vars.scss' as *;
+
+.social-icons {
+  position: fixed;
+  bottom: 0;
+  left: 4rem;
+  &-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    &-item {
+      font-size: $tlarge2;
+      transition: 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-link {
+        padding: 10px;
+        color: $item-color;
+        transition: 0.3s ease-in-out;
+        outline: 2px dashed transparent;
+        &:hover {
+          color: $highlight;
+        }
+        &:focus {
+          outline-color: $focus;
+          transform: translateY(-4px);
+          color: $highlight;
+        }
+      }
+      &:hover {
+        transform: translateY(-4px);
+      }
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: $highlight;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    left: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

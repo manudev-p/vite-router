@@ -1,0 +1,43 @@
+@use '../styles/vars.scss' as *;
+
+.contact {
+  max-width: 700px;
+  margin: 15rem auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .contact-title {
+    color: $title;
+    font-size: $tbase;
+    font-family: $fira-code;
+    font-weight: 300;
+    &::before {
+      counter-increment: title;
+      content: '0' counter(title) '.';
+      margin-right: 0.5rem;
+      color: $image-border;
+    }
+  }
+  .contact-sub-title {
+    font-size: $tgiant;
+    font-family: $raleway;
+    color: $highlight;
+  }
+  .contact-text {
+    color: $text;
+    font-size: $tlarge;
+    letter-spacing: 0.07rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    font-family: $raleway;
+    text-align: center;
+  }
+  .contact-cta {
+    margin-top: 1rem;
+    .btn {
+      padding: 1rem 2rem;
+    }
+  }
+}

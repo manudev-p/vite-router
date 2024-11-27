@@ -1,0 +1,132 @@
+{
+  "content": {
+    "en": {
+      "sections": {
+        "projects": {
+          "title": "Some Things I’ve Built",
+          "subTitle": "Featured Project",
+          "work": [
+            {
+              "image": "/project1.png",
+              "projectName": "Pokedex",
+              "projectLink": "https://netlify.com",
+              "projectDescription": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+              "projectTech": [
+                "React",
+                "Redux Toolkit",
+                "SCSS",
+                "Firebase",
+                "Typescript",
+                "PokeApi"
+              ],
+              "projectExternalLinks": {
+                "github": "",
+                "externalLink": ""
+              }
+            },
+            {
+              "image": "/project2.png",
+              "projectName": "Realtime Chat App",
+              "projectLink": "https://netlify.com",
+              "projectDescription": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+              "projectTech": [
+                "React",
+                "Sockets",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Styled Components"
+              ],
+              "projectExternalLinks": {
+                "github": "",
+                "externalLink": ""
+              }
+            },
+            {
+              "image": "/project3.png",
+              "projectName": "Netflix App",
+              "projectLink": "https://netlify.com",
+              "projectDescription": " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.",
+              "projectTech": [
+                "React",
+                "Node.js",
+                "Firebase",
+                "MongoDB",
+                "Express",
+                "Redux Toolkit"
+              ],
+              "projectExternalLinks": {
+                "github": "",
+                "externalLink": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "es": {
+      "sections": {
+        "projects": {
+          "title": "Algunas cosas que he construido.",
+          "subTitle": "Projectos Recientes",
+          "work": [
+            {
+              "image": "/project1.png",
+              "projectName": "Pokedex",
+              "projectLink": "https://netlify.com",
+              "projectDescription": "Lorem Ipsum es simplemente un texto de relleno de las imprentas y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras   de tipos. Ha sobrevivido no solo cinco    siglos, sino también el salto a la composición electrónica, permaneciendo esencialmente sin cambios.",
+              "projectTech": [
+                "React",
+                "Redux Toolkit",
+                "SCSS",
+                "Firebase",
+                "Typescript",
+                "PokeApi"
+              ],
+              "projectExternalLinks": {
+                "github": "",
+                "externalLink": ""
+              }
+            },
+            {
+              "image": "/project2.png",
+              "projectName": "Aplicación de chat en tiempo real",
+              "projectLink": "https://netlify.com",
+              "projectDescription": "Lorem Ipsum es simplemente un texto de relleno de las imprentas y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras   de tipos. Ha sobrevivido no solo cinco    siglos, sino también el salto a la composición electrónica, permaneciendo esencialmente sin cambios.",
+              "projectTech": [
+                "React",
+                "Sockets",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "Styled Components"
+              ],
+              "projectExternalLinks": {
+                "github": "",
+                "externalLink": ""
+              }
+            },
+            {
+              "image": "/project3.png",
+              "projectName": "Aplicación Netflix",
+              "projectLink": "https://netlify.com",
+              "projectDescription": "Lorem Ipsum es simplemente un texto de relleno de las imprentas y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde la década de 1500, cuando un impresor desconocido tomó una galera de tipos y la mezcló para hacer un libro de muestras   de tipos. Ha sobrevivido no solo cinco   siglos, sino también el salto a la composición electrónica, permaneciendo esencialmente sin cambios.",
+              "projectTech": [
+                "React",
+                "Node.js",
+                "Firebase",
+                "MongoDB",
+                "Express",
+                "Redux Toolkit"
+              ],
+              "projectExternalLinks": {
+                "github": "",
+                "externalLink": ""
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

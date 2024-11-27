@@ -1,0 +1,52 @@
+$beige: #fffcf2;
+$beige-trans: #fffcf2c2;
+$dark-beige: #ccc5b9;
+$gray: #403d39;
+$almost-black: #252422;
+$orange: #eb5e28;
+$light-orange: #eb8259;
+
+/* page */
+$background-color: $beige;
+$scrollbar: $almost-black;
+$selection: $gray;
+
+/* generic */
+$text: $almost-black;
+$title: $gray;
+$link: $orange;
+$highlight: $orange;
+$highlight-low: $light-orange;
+$bg: $beige;
+$bg-trans: $beige-trans;
+$image-border: $almost-black;
+$focus: $almost-black;
+/* nav */
+$nav-link: $gray;
+$nav-index: $almost-black;
+$nav-burger: $almost-black;
+$nav-bg: $beige-trans;
+/* project */
+$project-image-overlay-sm: $beige;
+$project-description-subtitle-hover: $almost-black;
+$project-description-iconlink: $gray;
+$project-description-iconlink-hover: $almost-black;
+/* socialIcons */
+$item-color: $gray;
+// fix this
+$fira-code: arial;
+$raleway: arial;
+
+$tsm: 13px;
+$tsm1: 14px;
+$tsm2: 15px;
+$tbase: 16px;
+$tlarge: 18px;
+$tlarge2: 22px;
+$txlarge: 25px;
+$tx2large: 32px;
+$tgiant: clamp(40px, 8vw, 80px);
+@media screen and (max-width: 480px) {
+  $tx2large: 25px;
+  // $tgiant: 40px;
+}

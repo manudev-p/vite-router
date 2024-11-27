@@ -1,0 +1,15 @@
+@use '../styles/vars.scss' as *;
+
+.loader {
+  color: $focus;
+  fill: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 90vh;
+  svg {
+    height: 10rem;
+    width: 10rem;
+  }
+}

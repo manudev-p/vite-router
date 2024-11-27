@@ -1,0 +1,18 @@
+@use '../styles/vars.scss' as *;
+.btn {
+  color: $text;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  border: 1px solid $image-border;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-size: $tsm;
+  outline: none;
+  &:hover {
+    background-color: $highlight-low;
+  }
+  &:focus {
+    background-color: $focus;
+  }
+}

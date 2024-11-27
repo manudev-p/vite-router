@@ -1,0 +1,45 @@
+@use '../styles/vars.scss' as *;
+
+.hero {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: center;
+  min-height: 60vh;
+  &-title {
+    color: $title;
+    font-size: $tsm2;
+    font-family: $fira-code;
+  }
+  &-title-large {
+    font-size: $tgiant;
+    font-family: $raleway;
+    color: $highlight;
+  }
+  &-title-sub {
+    color: $title;
+  }
+  &-text {
+    color: $text;
+    margin-right: 40%;
+    font-size: $tlarge;
+    letter-spacing: 0.07rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    font-family: $raleway;
+  }
+  &-button {
+    margin-top: 2rem;
+    .btn {
+      padding: 1rem 2rem;
+      font-size: $tsm1;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &-text {
+      width: 90%;
+    }
+  }
+}
