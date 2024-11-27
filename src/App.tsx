@@ -1,7 +1,6 @@
 import React from 'react'
 import ProtectedRoot from './auth/ProtectedRoot'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './App.css'
 
 // Define the structure of a page module
 type PageModule = {

@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: local('FiraCode-VariableFont_wght'),
+    url('../assets/fonts/FiraCode-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway-VariableFont_wght'),
+    url('../assets/fonts/Raleway-VariableFont_wght.ttf');
+}
+
+// fix this
+$fira-code: 'Fira Code', sans-serif;
+$raleway: 'Raleway', monospace;
+
 $beige: #fffcf2;
 $beige-trans: #fffcf2c2;
 $dark-beige: #ccc5b9;
@@ -33,9 +49,6 @@ $project-description-iconlink: $gray;
 $project-description-iconlink-hover: $almost-black;
 /* socialIcons */
 $item-color: $gray;
-// fix this
-$fira-code: arial;
-$raleway: arial;
 
 $tsm: 13px;
 $tsm1: 14px;
